@@ -18,8 +18,8 @@ Blog.register(function(app, auth, database) {
 
   //We are adding a link to the main menu for all authenticated users
   Blog.menus.add({
-    title: 'blog example page',
-    link: 'blog example page',
+    title: 'blog',
+    link: 'blog index',
     roles: ['authenticated'],
     menu: 'main'
   });

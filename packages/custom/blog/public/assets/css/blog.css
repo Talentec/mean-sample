@@ -1,3 +1,71 @@
-.blog-example h1 {
-  background-color: purple
-}
+body {
+  color: #555;
+  font-family: "Helvetica Neue", "Lucida Grande", "Arial";
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center; }
+
+h1, h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #343434; }
+
+h1 {
+  text-shadow: 1px 2px 2px #ddd;
+  font-size: 60px; }
+
+p.content {
+  background-color: #eee;
+  margin: 20px auto;
+  min-height: 100px;
+  padding: 1em;
+  width: 600px; }
+
+article {
+  border: 1px solid #ccc;
+  display: block;
+  margin: 20px;
+  text-align: left;
+  width: 320px; }
+  article h2 {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #eee; }
+  article p {
+    background-color: #ffa; }
+
+.margin-top {
+  border-bottom: 1px solid #ccc;
+  margin-top: 50px; }
+
+form div {
+  margin: 10px 0; }
+  form div span {
+    display: inline-block;
+    text-align: left;
+    width: 100px; }
+
+.comment {
+  background-color: #fbfbfb;
+  margin: 10px auto;
+  padding: 1em;
+  width: 600px; }
+  .comment p {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    width: 100%; }
+  .comment em {
+    display: block;
+    text-align: right;
+    width: 100%; }
+
+input[type=text] {
+  width: 490px; }
+
+input[type=button], input[type=submit] {
+  text-align: left; }
+
+textarea {
+  width: 490px;
+  height: 90px; }

@@ -1,0 +1,32 @@
+<section data-ng-controller="PostsController" data-ng-init="findOne()">
+  <h1>{{post.title}}</h1>
+  <p class="content">{{post.text}}</p>
+  <span>{{post.created | date:'medium'}}</span>
+  <section data-ng-if="post.comments.length">
+    <h2 class="margin-top">Comments</h2>
+    <div class="comment" data-ng-repeat="comment in post.comments">
+      <p>{{comment.comment}}</p>
+      <em>by <strong>{{comment.user}}</strong></em>
+    </div>
+  </section>
+  <h2 class="margin-top">Add a Comment</h2>
+  <form name="postForm" class="form-horizontal col-md-6" role="form" data-ng-submit="newComment()">
+    <div class="form-group">
+      <label class="col-md-3 control-label">Author</label>
+      <div class="col-md-9">
+        <input name="user" type="text" class="form-control" data-ng-model="comment.user" id="user" placeholder="Author" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="comment" class="col-md-3 control-label">Comment</label>
+      <div class="col-md-9">
+        <textarea name="comment" data-ng-model="comment.comment" id="comment" cols="30" rows="20" placeholder="Comment" class="form-control" required></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-3 col-md-9">
+        <button type="submit" class="btn btn-info">Send</button>
+      </div>
+    </div>
+  </form>
+</section>
